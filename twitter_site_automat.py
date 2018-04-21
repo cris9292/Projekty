@@ -7,7 +7,7 @@ valid_fullname = "Krzysztof Malolepszy"
 invalid_email = "12!3opwgmail.com"
 valid_password = "Password123@!"
 
-class AliexpressRegisteration(unittest.TestCase):
+class TwitterRegisteration(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
