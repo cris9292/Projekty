@@ -30,8 +30,6 @@ class EbouwieRegisteration(unittest.TestCase):
         email.send_keys(invalid_email)
         policy = driver.find_element_by_xpath('//*[@id="form-validate"]/label[2]/input')
         policy.click()
-        sleep(3)
-        policy.click()
         error_notice = driver.find_element_by_xpath('//*[@id="form-validate"]/div[3]/span')
         print(error_notice.text)
         assert error_notice.is_displayed
